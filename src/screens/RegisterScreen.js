@@ -1,4 +1,4 @@
-import { Button, View } from "react-native";
+import { Button, View, Text } from "react-native";
 
 export default function RegisterScreen({navigation}) {
     return (

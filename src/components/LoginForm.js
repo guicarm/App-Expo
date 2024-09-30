@@ -1,6 +1,6 @@
 import { useContext, useState } from "react"
 import { AuthContext } from "../context/AuthContext"
-import { Button, TextInput, View } from "react-native"
+import { Button, TextInput, View, Text} from "react-native"
 
 const LoginForm = () => {
     const [email, setEmail] = useState("")
@@ -34,6 +34,7 @@ const LoginForm = () => {
                 placeholder="Password"
                 value={password}
                 onChangeText={setPassword}
+                secureTextEntry
             />
 
             <Button title="Login" onPress={handleLogin}/>

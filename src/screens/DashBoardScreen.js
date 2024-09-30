@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { AuthContext } from "../context/AuthContext"
-import { View } from "react-native"
+import { View, Text} from "react-native"
 
 const DashBoardScreen = () => {
     const {user, logout} = useContext(AuthContext)
@@ -12,3 +12,5 @@ const DashBoardScreen = () => {
         </View>
     )
 }
+
+export default DashBoardScreen
